@@ -35,18 +35,6 @@ class Office {
             }),
             new Car({
                 brand : 'Mazda',
-                model: 'CX-9',
-                engine: 'SKYACTIV - G 2.5',
-                capacity: 5,
-                warranty: 5,
-                taxes: 12,
-                gearbox: 'Manual',
-                fuelType: 'Extra',
-                FuelCapacity: 19.5,
-                price: 49000,
-            }),
-            new Car({
-                brand : 'Mazda',
                 model: 'CX-30',
                 engine: 'SKYACTIV - G 2.5',
                 capacity: 5,

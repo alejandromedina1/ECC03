@@ -3,7 +3,7 @@ class Vehicle {
    this.params = params;
     }
     showDetails(){
-        //png del texto de cada vehiculo
+        //Me falta por hacer esto
     }
 }
 
