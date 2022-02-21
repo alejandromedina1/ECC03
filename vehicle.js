@@ -1,9 +1,8 @@
 class Vehicle {
     constructor(params) {
-   this.params = params;
+        this.params = params;
     }
-    showDetails(){
+    showDetails() {
         //Me falta por hacer esto
     }
 }
-

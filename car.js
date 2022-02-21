@@ -1,5 +1,7 @@
-class Car extends Vehicle{
-    constructor([...params]){
+class Car extends Vehicle {
+    constructor({
+        ...params
+    }) {
         super(params);
     }
 }

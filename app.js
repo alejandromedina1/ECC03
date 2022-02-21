@@ -8,6 +8,7 @@ class App {
         this.brands = this.app.loadImage('Marcas.png');
         this.filters = this.app.loadImage('Filtros.png');
         this.owned = this.app.loadImage('Comprados.png');
+        this.office = new Office('south');
     }
     application() {
         switch (this.screen) {

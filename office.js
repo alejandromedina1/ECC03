@@ -1,16 +1,31 @@
 class Office {
-    constructor(name){
+    constructor(name) {
         this.name = name;
         this.inventory = []
+        this.app = app;
+        this.skins = [
+            loadImage('a4.png'),
+            loadImage('a6.png'),
+            loadImage('cx-30.png'),
+            loadImage('mazda 3.png'),
+            loadImage('sentra.png'),
+            loadImage('versa.png'),
+            loadImage('CB-190R.png'),
+            loadImage('X-Blade.png'),
+            loadImage('MT09.png'),
+            loadImage('MT10.png'),
+            loadImage('Niken.png'),
+        ];
         this.init();
     }
-    showOffices(){
+    showOffices() {
         console.log(this.name);
     }
-    init(){
-        this.inventory.push( new OfficeInventory([
+   
+    init() {
+        this.inventory.push(new OfficeInventory([
             new Car({
-                brand : 'Audi',
+                brand: 'Audi',
                 model: 'A4',
                 engine: 'V12',
                 capacity: 5,
@@ -22,7 +37,7 @@ class Office {
                 price: 45000,
             }),
             new Car({
-                brand : 'Audi',
+                brand: 'Audi',
                 model: 'A6',
                 engine: 'V12',
                 capacity: 5,
@@ -34,7 +49,7 @@ class Office {
                 price: 46000,
             }),
             new Car({
-                brand : 'Mazda',
+                brand: 'Mazda',
                 model: 'CX-30',
                 engine: 'SKYACTIV - G 2.5',
                 capacity: 5,
@@ -46,19 +61,7 @@ class Office {
                 price: 24000,
             }),
             new Car({
-                brand : 'Mazda',
-                model: 'Mazda 2',
-                engine: 'SKYACTIV - G 1.5',
-                capacity: 5,
-                warranty: 5,
-                taxes: 4,
-                gearbox: 'Auto',
-                fuelType: 'Corriente',
-                FuelCapacity: 11.6,
-                price: 16000,
-            }),
-            new Car({
-                brand : 'Mazda',
+                brand: 'Mazda',
                 model: 'Mazda 3',
                 engine: 'SKYACTIV - G 1.5',
                 capacity: 5,
@@ -70,7 +73,7 @@ class Office {
                 price: 22000,
             }),
             new Car({
-                brand : 'Nissan',
+                brand: 'Nissan',
                 model: 'Sentra',
                 engine: '2.0',
                 capacity: 5,
@@ -82,7 +85,7 @@ class Office {
                 price: 1000,
             }),
             new Car({
-                brand : 'Nissan',
+                brand: 'Nissan',
                 model: 'Versa',
                 engine: '1.6',
                 capacity: 5,
@@ -94,7 +97,7 @@ class Office {
                 price: 23000,
             }),
             new Motorbike({
-                brand : 'Honda',
+                brand: 'Honda',
                 model: 'CB-190R',
                 engine: '4T - OHC',
                 capacity: 2,
@@ -106,19 +109,7 @@ class Office {
                 price: 2935,
             }),
             new Motorbike({
-                brand : 'Honda',
-                model: 'CB-125F',
-                engine: '4T - OHC',
-                capacity: 2,
-                warranty: 2,
-                taxes: 1,
-                gearbox: 'Manual',
-                fuelType: 'Extra',
-                FuelCapacity: 5,
-                price: 1670,
-            }),
-            new Motorbike({
-                brand : 'Honda',
+                brand: 'Honda',
                 model: 'X-Blade',
                 engine: '',
                 capacity: 2,
@@ -130,31 +121,7 @@ class Office {
                 price: 2540,
             }),
             new Motorbike({
-                brand : 'Yamaha',
-                model: 'MT03',
-                engine: '4 DOHC',
-                capacity: 2,
-                warranty: 2,
-                taxes: 4,
-                gearbox: 'Auto',
-                fuelType: 'Extra',
-                FuelCapacity: 18,
-                price: 6670,
-            }),
-            new Motorbike({
-                brand : 'Yamaha',
-                model: 'MT07',
-                engine: '4 DOHC',
-                capacity: 2,
-                warranty: 3,
-                taxes: 5,
-                gearbox: 'Auto',
-                fuelType: 'Extra',
-                FuelCapacity: 18,
-                price: 11000,
-            }),
-            new Motorbike({
-                brand : 'Yamaha',
+                brand: 'Yamaha',
                 model: 'MT09',
                 engine: '4 DOHC',
                 capacity: 2,
@@ -166,7 +133,7 @@ class Office {
                 price: 12000,
             }),
             new Motorbike({
-                brand : 'Yamaha',
+                brand: 'Yamaha',
                 model: 'MT10',
                 engine: '4 DOHC',
                 capacity: 1,
@@ -178,8 +145,8 @@ class Office {
                 price: 17000,
             }),
             new Motorbike({
-                brand : 'Yamaha',
-                model: 'Niken GT',
+                brand: 'Yamaha',
+                model: 'Niken',
                 engine: '4 DOHC',
                 capacity: 1,
                 warranty: 3,
